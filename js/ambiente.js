@@ -15,6 +15,11 @@ function salvarCep(){
         return false;
     }
 
+    if (Numero_residencia < 1) {
+        window.alert('verifique se o numero esta correto');
+        return false
+    }
+
 
     let tabela = document.getElementById('tabela');
     let tamanho_tabela = tabela.rows.length;
